@@ -27,7 +27,7 @@ import toInteger from './toInteger.js';
 function drop(array, n, guard) {
   const length = array == null ? 0 : array.length;
   if (!length) {
-    return [];
+    return []; 
   }
   n = (guard || n === undefined) ? 1 : toInteger(n);
   return baseSlice(array, n < 0 ? 0 : n, length);
